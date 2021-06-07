@@ -3,7 +3,7 @@ const router = express.Router()
 const loginSchema = require('../../models/loginSchema')
 const verifyAccount = require('../../public/javascripts/verifyAccount')
 
-router.post('/verify', (req, res) => {
+router.post('/', (req, res) => {
   const loginData = req.body
   loginSchema.find()
     .lean()
@@ -18,7 +18,7 @@ router.post('/verify', (req, res) => {
     .catch(error => console.error(error))
 })
 
-router.post('/create', (req, res) => {
+router.post('/add', (req, res) => {
   const newData = req.body
   return loginSchema.create(newData)
     .then(() => res.redirect('/'))
