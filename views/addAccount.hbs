@@ -1,0 +1,24 @@
+<div class="index-subtitle">
+  <h3>新增帳號頁面</h3>
+</div>
+<div class="login-box">
+  <form class="add-account-data" action="/login/create" method="post">
+    <label for="account-input" class="account select-label col-form-label"><i class="fas fa-user-circle"></i>帳號</label>
+    <div class="account-email input-column">
+      <input type="email" maxlength="40" name="account" id="account-input" class="form-control" placeholder="長度需小於40個字" required>
+      <small id="help" class="invalid-feedback">必須是個郵件地址喔</small>
+    </div>
+    <label for="password-input" class="password select-label col-form-label"><i class="fas fa-key"></i>密碼</label>
+    <div class="account-pass input-column">
+      <input class="new-password form-control" type="text" minlength="6" maxlength="20" name="password" id="password-input" placeholder="長度6 ~ 20個字" required>
+      <small id="help" class="number">必須包含0~9數字</small>
+      <small id="help" class="lowerChar">必須包含a~z字母</small>
+      <small id="help" class="upperChar">必須包含A~Z字母</small>
+      <small id="help" class="length">長度必須大於6個字 小於20個字</small>
+    </div>
+    <div class="button-box">
+      <button class="add-submit" type="submit">新增帳號</button>
+      <a href="/" class="create">回首頁</a>
+    </div>
+  </form>
+</div>

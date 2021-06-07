@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main.hbs */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.banner-title {
+  width: 100%;
+  padding: 5px;
+  font-weight: bolder;
+  background-color: slategray;
+  color: aliceblue;
+  text-align: center;
+}
+
+/* index.hbs */
+.index-subtitle {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  color: chocolate;
+}
+
+.index-subtitle h3 {
+  font-weight: bolder;
+}
+
+.login-box {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.password {
+  margin-top: 10px;
+}
+
+.button-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button-box button, .button-box a {
+  width: 25%;
+  margin: 0 15px;
+  border: none;
+  text-decoration: none;
+  font-weight: bolder;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+.button-box button {
+  background-color: cadetblue;
+}
+
+.button-box a {
+  background-color: goldenrod;
+}
+
+/* addAccount.hbs */
+.account-pass {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-pass small {
+  margin-top: 4px;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
+
+/* deny.hbs */
+.deny-slogan {
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+  font-weight: bolder;
+  color: coral;
+}
+
+.deny a.create {
+  background-color: cadetblue;
+}
+
+/* welcome.hbs */
+.welcome-slogan {
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+  font-weight: bolder;
+  color: lightgreen;
+}
+
+.welcome a {
+  display: block;
+  width: 30%;
+  margin: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  background-color: goldenrod;
+  font-weight: bolder;
+  border-radius: 5px;
+  color: aliceblue;
+}
