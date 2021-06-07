@@ -3,9 +3,14 @@
 </div>
 <div class="login-box">
   <form class="add-account-data" action="/login/add" method="post">
+    <label for="name-input" class="account select-label col-form-label"><i class="fas fa-address-card"></i>姓名</label>
+    <div class="account-name input-column">
+      <input type="text" maxlength="40" name="firstName" id="name-input" class="form-control" placeholder="長度需小於40個字" required>
+      <small id="help" class="invalid-feedback">長度不可大於40個字</small>
+    </div>
     <label for="account-input" class="account select-label col-form-label"><i class="fas fa-user-circle"></i>帳號</label>
     <div class="account-email input-column">
-      <input type="email" maxlength="40" name="account" id="account-input" class="form-control" placeholder="長度需小於40個字" required>
+      <input type="email" maxlength="40" name="email" id="account-input" class="form-control" placeholder="長度需小於40個字" required>
       <small id="help" class="invalid-feedback">必須是個郵件地址喔</small>
     </div>
     <label for="password-input" class="password select-label col-form-label"><i class="fas fa-key"></i>密碼</label>
