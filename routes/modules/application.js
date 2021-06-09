@@ -35,7 +35,11 @@ router.get('/addnew', (req, res) => {
 
 router.get('/', (req, res) => {
   const value = req.signedCookies.firstName
-  res.render('welcome', {value})
+  if (value) {
+    res.render('welcome', {value})
+  } else {
+    res.redirect('/')
+  }
 })
 
 module.exports = router
